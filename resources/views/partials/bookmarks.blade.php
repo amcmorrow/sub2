@@ -1,4 +1,4 @@
-<h1>Bookmarks</h1>
+<h1>Bookmark Bar</h1>
 
 <!-- Bookmarks Section -->
 <div class="bookmarks-section">
