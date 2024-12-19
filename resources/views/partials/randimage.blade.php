@@ -32,6 +32,7 @@
     // Load a random image on button click
     document.getElementById('loadImageButton').addEventListener('click', loadRandomImage);
 
-    // Optionally, load a random image on page load
-    window.onload = loadRandomImage;
+
+     // Load a random image when the DOM content is loaded
+    document.addEventListener('DOMContentLoaded', loadRandomImage);
   </script>
