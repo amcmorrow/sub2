@@ -1,6 +1,6 @@
 <?php
 // Verify the webhook secret (replace 'your-secret-key' with your actual secret)
-$secret = 'McMorrow!984';
+$secret = '${HOOK_PASS}';
 $payload = file_get_contents('php://input');
 $signature = hash_hmac('sha256', $payload, $secret);
 
