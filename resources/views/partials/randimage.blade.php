@@ -6,6 +6,11 @@
   // Function to fetch and display a random image
   async function loadRandomImage() {
     const imageContainer = document.getElementById('api_image');
+    if (!imageContainer) {
+      console.error("Image container is not found in the DOM.");
+      return;
+    }
+
     const apiUrl = 'https://picsum.photos/600/400'; // API for random images
 
     try {
@@ -32,9 +37,10 @@
   // Load a random image on button click
   document.getElementById('loadImageButton').addEventListener('click', loadRandomImage);
 
-  // Detect URL changes and load a new random image
+  // Track the last known URL pathname
   let lastPathname = window.location.pathname;
 
+  // Check for URL changes
   const checkURLChange = () => {
     const currentPathname = window.location.pathname;
     if (currentPathname !== lastPathname) {
@@ -43,8 +49,13 @@
     }
   };
 
-  // Use a timer-based approach to detect URL changes (compatible with most SPA frameworks)
+  // Use a timer-based approach to detect URL changes (for SPA frameworks)
   setInterval(checkURLChange, 500);
+
+  // Listen for browser navigation events (e.g., back/forward buttons)
+  window.addEventListener('popstate', () => {
+    checkURLChange();
+  });
 
   // Initial load
   loadRandomImage();
