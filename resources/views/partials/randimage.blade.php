@@ -10,7 +10,7 @@
 
       try {
         // Show loading text while fetching
-        imageContainer.innerHTML = 'Loading...';
+        imageContainer.innerHTML = '<img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/6b449513765711.56277d303236b.gif" alt="Random Image" class="uk-align-center">';
 
         // Fetch the image (Lorem Picsum automatically redirects to a random image)
         const response = await fetch(apiUrl);
