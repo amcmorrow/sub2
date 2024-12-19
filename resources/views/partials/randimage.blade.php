@@ -5,7 +5,7 @@
 <script>
     // Function to fetch and display a random image
     async function loadRandomImage() {
-      console.log('working...');
+      console.log('still working...');
       const imageContainer = document.getElementById('api_image');
       const apiUrl = 'https://picsum.photos/600/400'; // API for random images
 
