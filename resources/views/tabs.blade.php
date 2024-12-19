@@ -22,7 +22,7 @@
 
 <!-- Random Image -->
 <div id="api_image">Loading...</div>
-<button id="loadImageButton" style="display: block; margin: 20px auto;">New Image</button>
+<button id="loadImageButton" class="uk-button uk-button-primary" style="display: block; margin: 20px auto;">New Image</button>
 
 @include('partials.randimage')
 
