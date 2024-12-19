@@ -10,17 +10,18 @@ error_log('Received signature: ' . $_SERVER['HTTP_X_HUB_SIGNATURE_256']);
 error_log('Generated signature: sha256=' . $signature);
 
 if (hash_equals('sha256=' . $signature, $_SERVER['HTTP_X_HUB_SIGNATURE_256'])) {
-    // Pull the latest changes from the Git repository
-    $output = shell_exec('cd /home/amcmorrow/sub.amcmorrow.com && git fetch origin dev && git merge origin/main 2>&1');
-    error_log('Git merge output: ' . $output);
 
-    // Perform any additional update tasks (e.g., update database, clear caches, etc.)
-    // ...
+// Pull the latest changes from the Git repository
+$output = shell_exec('cd /home/amcmorrow/sub.amcmorrow.com && git pull origin main 2>&1');
+error_log('Git pull output: ' . $output);
 
-    error_log('Website updated successfully');
-    http_response_code(200);
+// Perform any additional update tasks (e.g., update database, clear caches, etc.)
+// ...
+
+error_log('Website updated successfully');
+http_response_code(200);
 } else {
-    error_log('Invalid webhook signature');
-    http_response_code(401);
+error_log('Invalid webhook signature');
+http_response_code(401);
 }
 ?>
