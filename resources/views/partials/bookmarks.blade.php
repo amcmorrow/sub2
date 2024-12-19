@@ -1,4 +1,4 @@
-<h1>Some Bookies...</h1>
+<h1>User's Bookmarks</h1>
 
 <!-- Bookmarks Section -->
 <div class="bookmarks-section">
