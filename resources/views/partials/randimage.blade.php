@@ -25,7 +25,7 @@
       } catch (error) {
         // Handle errors and display a message
         console.error(error);
-        imageContainer.innerHTML = 'Failed to load image. Please try again.';
+        imageContainer.innerHTML = '<div class="uk-position-center-horizontal"><img src="https://minesandmoney.com/_images/loading-600x400.gif?version=164" alt="Random Image" class="uk-align-center"><br>Failed to load image. Please try again.</div>';
       }
     }
 
