@@ -1,5 +1,5 @@
 <!-- Random Image -->
-<div id="api_image" class="uk-align-center">Loading...</div>
+<div id="api_image">Loading...</div>
 <button id="loadImageButton" class="uk-button uk-button-primary" style="display: block; margin: 20px auto;">New Image</button>
 
 <script>
@@ -18,7 +18,7 @@
         // If successful, update the div with the image
         if (response.ok) {
           const imageUrl = response.url;
-          imageContainer.innerHTML = `<img src="${imageUrl}" alt="Random Image">`;
+          imageContainer.innerHTML = `<img src="${imageUrl}" alt="Random Image" class="uk-align-center">`;
         } else {
           throw new Error('Failed to fetch image');
         }
