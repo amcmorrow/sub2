@@ -11,6 +11,7 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
+
 <!-- Google Search Bar -->
 <div class="search-bar">
     <form action="https://www.google.com/search" method="GET" target="_blank">
@@ -19,6 +20,7 @@
     </form>
 </div>
 
+<!-- Random Image -->
 <div id="api_image">Loading...</div>
 <button id="loadImageButton" style="display: block; margin: 20px auto;">New Image</button>
 
