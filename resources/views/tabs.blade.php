@@ -12,8 +12,8 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
 
-                    @include('partials.randimage')
                     @include('partials.bookmarks')
+                    @include('partials.randimage')
 
 
                 </div>

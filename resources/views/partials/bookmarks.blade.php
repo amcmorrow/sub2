@@ -2,9 +2,8 @@
 
 <!-- Bookmarks Section -->
 <div class="bookmarks-section">
-  <h2>Your Bookmarks</h2>
 
-  <!-- Add Bookmark -->
+    <!-- Add Bookmark -->
   <div class="add-bookmark">
     <input type="text" id="bookmarkInput" placeholder="Enter bookmark URL">
     <button onclick="addBookmark()">Add Bookmark</button>
