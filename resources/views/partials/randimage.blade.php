@@ -1,5 +1,5 @@
 <!-- Random Image -->
-<div id="api_image"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/6b449513765711.56277d303236b.gif" alt="Random Image" class="uk-align-center"></div>
+<div id="api_image"><img src="https://minesandmoney.com/_images/loading-600x400.gif?version=164" alt="Random Image" class="uk-align-center"></div>
 <button id="loadImageButton" class="uk-button uk-button-primary" style="display: block; margin: 20px auto;">New Image</button>
 
 <script>
@@ -10,7 +10,7 @@
 
       try {
         // Show loading text while fetching
-        imageContainer.innerHTML = '<img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/6b449513765711.56277d303236b.gif" alt="Random Image" class="uk-align-center">';
+        imageContainer.innerHTML = '<img src="https://minesandmoney.com/_images/loading-600x400.gif?version=164" alt="Random Image" class="uk-align-center">';
 
         // Fetch the image (Lorem Picsum automatically redirects to a random image)
         const response = await fetch(apiUrl);
