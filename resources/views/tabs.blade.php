@@ -1,3 +1,5 @@
+@include('partials.head')
+
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
@@ -16,6 +18,9 @@
         <button type="submit">Search</button>
     </form>
 </div>
+
+<div id="api_image">Loading...</div>
+
                 </div>
             </div>
         </div>
