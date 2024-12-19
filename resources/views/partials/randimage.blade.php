@@ -1,5 +1,5 @@
 <!-- Random Image -->
-<div id="api_image">Loading...</div>
+<div id="api_image"></div>
 <button id="loadImageButton" class="uk-button uk-button-primary" style="display: block; margin: 20px auto;">New Image</button>
 
 <script>
