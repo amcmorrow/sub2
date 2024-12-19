@@ -35,8 +35,5 @@
 
 
      // Load a random image when the DOM content is loaded
-     window.addEventListener('view-rendered', function() {
-         loadRandomImage();
-        });
-
+    document.addEventListener('DOMContentLoaded', loadRandomImage);
   </script>
