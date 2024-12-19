@@ -7,9 +7,9 @@ $signature = hash_hmac('sha256', $payload, $secret);
 // Log the incoming webhook payload and signature
 error_log('Received webhook payload: ' . $payload);
 error_log('Received signature: ' . $_SERVER['HTTP_X_HUB_SIGNATURE_256']);
-error_log('Generated signature: ' . $signature);
+error_log('Generated signature: sha256=' . $signature);
 
-if ($signature === $_SERVER['HTTP_X_HUB_SIGNATURE_256']) {
+if (hash_equals('sha256=' . $signature, $_SERVER['HTTP_X_HUB_SIGNATURE_256'])) {
     // Pull the latest changes from the Git repository
     $output = shell_exec('cd /home/amcmorrow/sub.amcmorrow.com && git pull origin main 2>&1');
     error_log('Git pull output: ' . $output);
