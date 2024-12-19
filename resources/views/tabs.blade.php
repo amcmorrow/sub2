@@ -13,6 +13,7 @@
                 <div class="p-6 text-gray-900">
 
                     @include('partials.randimage')
+                    @include('partials.bookmarks')
 
 
                 </div>
