@@ -13,7 +13,7 @@
                 <div class="p-6 text-gray-900">
 
 <!-- Google Search Bar -->
-<div class="search-bar uk-align-center">
+<div class="search-bar uk-flex-center">
     <form action="https://www.google.com/search" method="GET" target="_blank">
         <input type="text" name="q" placeholder="Search Google..." required>
         <button class="uk-button uk-button-primary" type="submit">Search</button>

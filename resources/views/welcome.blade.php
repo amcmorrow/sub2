@@ -30,7 +30,7 @@
             </header>
 
             <main class="mt-6 container mx-auto px-3" style="background-color:rgb(255, 255, 255); min-height: 25vh;">
-                <div class="uk-position-top-center" style="margin-top:20px;">
+                <div class="uk-flex-center" style="margin-top:20px;">
                     <h1>Hello everyone.</h1><br>
                         @include('partials.randimage')
                 </div>
