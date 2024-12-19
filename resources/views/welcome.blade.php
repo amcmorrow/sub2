@@ -31,10 +31,7 @@
 
             <main class="mt-6" class="container mx-auto px-3" style="background-color:bisque;">
                 <div>
-                    <h1>Hello everyone.</h1>
-                    <!-- Random Image -->
-                        <div id="api_image">Loading...</div>
-                        <button id="loadImageButton" class="uk-button uk-button-primary" style="display: block; margin: 20px auto;">New Image</button>
+                    <h1>Hello everyone.</h1><br>
                         @include('partials.randimage')
                 </div>
             </main>

@@ -16,13 +16,9 @@
 <div class="search-bar">
     <form action="https://www.google.com/search" method="GET" target="_blank">
         <input type="text" name="q" placeholder="Search Google..." required>
-        <button type="submit">Search</button>
+        <button class="uk-button uk-button-primary" type="submit">Search</button>
     </form>
 </div>
-
-<!-- Random Image -->
-<div id="api_image">Loading...</div>
-<button id="loadImageButton" class="uk-button uk-button-primary" style="display: block; margin: 20px auto;">New Image</button>
 
 @include('partials.randimage')
 
