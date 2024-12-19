@@ -20,6 +20,10 @@
 </div>
 
 <div id="api_image">Loading...</div>
+<button id="loadImageButton" style="display: block; margin: 20px auto;">New Image</button>
+
+@include('partials.randimage')
+
 
                 </div>
             </div>
