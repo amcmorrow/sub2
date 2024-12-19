@@ -29,7 +29,7 @@
                     @endif
             </header>
 
-            <main class="mt-6">
+            <main class="mt-6" class="container mx-auto px-3" style="background-color:bisque;">
                 <div>
                     <h1>Hello everyone.</h1>
                 </div>
