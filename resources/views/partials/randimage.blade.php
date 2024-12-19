@@ -38,8 +38,15 @@
       }
     }
 
-    // Load a random image on button click
-    document.getElementById('loadImageButton').addEventListener('click', loadRandomImage);
+    // Function to reattach the event listener to the "New Image" button
+    function attachButtonListener() {
+      const loadImageButton = document.getElementById('loadImageButton');
+      if (loadImageButton) {
+        loadImageButton.addEventListener('click', loadRandomImage);
+      } else {
+        console.error("Button with id 'loadImageButton' not found.");
+      }
+    }
 
     // Track the last known URL pathname
     window.lastPathname = window.lastPathname || window.location.pathname;
@@ -49,7 +56,8 @@
       const currentPathname = window.location.pathname;
       if (currentPathname !== window.lastPathname) {
         window.lastPathname = currentPathname;
-        loadRandomImage();
+        loadRandomImage(); // Reload the random image
+        attachButtonListener(); // Reattach the button listener after navigation
       }
     };
 
@@ -63,5 +71,6 @@
 
     // Initial load
     loadRandomImage();
+    attachButtonListener(); // Attach the button listener on the first load
   }
 </script>
