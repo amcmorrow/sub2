@@ -33,16 +33,18 @@
   document.getElementById('loadImageButton').addEventListener('click', loadRandomImage);
 
   // Detect URL changes and load a new random image
-  let lastUrl = window.location.href;
-  const observer = new MutationObserver(() => {
-    const currentUrl = window.location.href;
-    if (currentUrl !== lastUrl) {
-      lastUrl = currentUrl;
+  let lastPathname = window.location.pathname;
+
+  const checkURLChange = () => {
+    const currentPathname = window.location.pathname;
+    if (currentPathname !== lastPathname) {
+      lastPathname = currentPathname;
       loadRandomImage();
     }
-  });
+  };
 
-  observer.observe(document.body, { childList: true, subtree: true });
+  // Use a timer-based approach to detect URL changes (compatible with most SPA frameworks)
+  setInterval(checkURLChange, 500);
 
   // Initial load
   loadRandomImage();
