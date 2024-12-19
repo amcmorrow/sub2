@@ -29,7 +29,7 @@
                     @endif
             </header>
 
-            <main class="mt-6" class="container mx-auto px-3" style="background-color:rgb(255, 255, 255);">
+            <main class="mt-6 container mx-auto px-3" style="background-color:rgb(255, 255, 255);">
                 <div class="uk-position-top-center">
                     <h1>Hello everyone.</h1><br>
                         @include('partials.randimage')
