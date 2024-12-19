@@ -18,4 +18,4 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.24/dist/css/uikit.min.css" />
 
   <!-- Include the CSS file -->
-<link rel="stylesheet" href="{{ asset('css/tab.css') }}?v={{ time() }}">
+<link rel="stylesheet" href="{{ asset('css/custom.css') }}?v={{ time() }}">
