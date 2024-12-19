@@ -46,3 +46,8 @@ class User extends Authenticatable
         ];
     }
 }
+
+public function bookmarks()
+{
+    return $this->hasMany(Bookmark::class);
+}
