@@ -15,5 +15,3 @@
 
 @include('partials.js')
 
-</body>
-</html>
